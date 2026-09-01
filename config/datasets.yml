@@ -1,0 +1,19 @@
+# Each source follows the same date/value contract, while metadata stays in config.
+datasets:
+  - name: gdp
+    path: data/raw/gdp.csv
+    unit: index_2022_100
+  - name: inflation
+    path: data/raw/inflation.csv
+    unit: percent
+  - name: employment
+    path: data/raw/employment.csv
+    unit: people
+  - name: unemployment
+    path: data/raw/unemployment.csv
+    unit: percent
+  - name: job_vacancies
+    path: data/raw/job_vacancies.csv
+    unit: vacancies
+output_dir: data/processed
+
