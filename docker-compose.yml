@@ -1,0 +1,7 @@
+services:
+  pipeline:
+    build: .
+    volumes:
+      # Keep generated artifacts available on the host after the container exits.
+      - ./data/processed:/app/data/processed
+
